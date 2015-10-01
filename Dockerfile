@@ -11,6 +11,6 @@ RUN apk --update add wget tar gcc build-base && \
     ./configure && \
     make && \
     make install && \
-    apk --purge del wget tar gcc
+    apk --purge del wget tar build-base gcc
 
 ENTRYPOINT ["/usr/local/bin/pen"]
