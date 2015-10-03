@@ -4,7 +4,7 @@ MAINTAINER Alexander Trost <galexrt@googlemail.com>
 ENV PEN_VERSION="0.30.1"
 
 RUN apt-get update && \
-    apt-get install -yq wget tar gcc build-base && \
+    apt-get install -yq wget tar gcc build-essential && \
     wget "http://siag.nu/pub/pen/pen-$PEN_VERSION.tar.gz" -P / && \
     tar xfz "/pen-$PEN_VERSION.tar.gz" -C / && \
     rm -f "/pem-$PEN_VERSION.tar.gz" && \
