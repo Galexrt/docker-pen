@@ -11,7 +11,7 @@ RUN apt-get update && \
     ./configure && \
     make && \
     make install && \
-    apt-get --purge remove -yq wget tar build-base gcc tar && \
+    apt-get --purge remove -yq wget tar build-essential gcc tar && \
     apt-get --purge autoremove -yq && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
