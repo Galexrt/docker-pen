@@ -6,7 +6,7 @@ ENV PEN_VERSION="0.30.1"
 RUN apt-get update && \
     apt-get install -yq wget gcc build-essential && \
     wget "http://siag.nu/pub/pen/pen-$PEN_VERSION.tar.gz" -P /tmp && \
-    tar xfz "/pen-$PEN_VERSION.tar.gz" -C /tmp && \
+    tar xfz "/tmp/pen-$PEN_VERSION.tar.gz" -C /tmp && \
     cd "/pen-$PEN_VERSION" && \
     ./configure && \
     make && \
