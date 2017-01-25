@@ -1,7 +1,7 @@
 FROM debian:jessie
 MAINTAINER Alexander Trost <galexrt@googlemail.com>
 
-ENV PEN_VERSION="0.33.0"
+ENV PEN_VERSION="0.34.0"
 
 RUN apt-get update && \
     apt-get -qq install -y wget gcc build-essential && \
