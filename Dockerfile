@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER Alexander Trost <galexrt@googlemail.com>
+LABEL maintainer="Alexander Trost <galexrt@googlemail.com>"
 
 ENV PEN_VERSION="0.34.0"
 
