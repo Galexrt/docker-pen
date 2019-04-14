@@ -1,7 +1,7 @@
-FROM debian:jessie
+FROM debian:stretch
 LABEL maintainer="Alexander Trost <galexrt@googlemail.com>"
 
-ENV PEN_VERSION="0.34.0"
+ENV PEN_VERSION="0.34.1"
 
 RUN apt-get update && \
     apt-get -qq install -y wget gcc build-essential && \
